@@ -1,0 +1,37 @@
+
+{
+    "version": "2.0",
+    "mediawiki": {
+      "name": "WikibaseFS",
+      "root": "http://fluidseal.smarter.codes/wiki/",
+      "main_page": "http://fluidseal.smarter.codes/wiki/Main_Page",
+      "api": "http://fluidseal.smarter.codes/w/api.php"
+    },
+    "wikibase": {
+      "site_iri": "http://fluidseal.smarter.codes/entity/",
+      "maxlag": 5,
+      "max_edits_per_minute": 60,
+      "tag": "openrefine-${version}",
+      "properties": {
+        "instance_of": "P6",
+        "subclass_of": "P108"
+      }},
+    "entity_types": {
+      "item": {
+         "site_iri": "http://fluidseal.smarter.codes/entity/",
+         "reconciliation_endpoint": "http://reconciliation-fluidseal.smarter.codes/${lang}/api",
+         "mediawiki_api": "http://fluidseal.smarter.codes/w/api.php"
+      },
+      "property": {
+         "site_iri": "http://fluidseal.smarter.codes/entity/",
+         "mediawiki_api": "http://fluidseal.smarter.codes/w/api.php"
+      },
+      "mediainfo": {
+         "site_iri": "http://fluidseal.smarter.codes/entity/",
+         "reconciliation_endpoint": "http://reconciliation-fluidseal.smarter.codes/${lang}/api"
+      }
+    }
+  }
+  
+
+
